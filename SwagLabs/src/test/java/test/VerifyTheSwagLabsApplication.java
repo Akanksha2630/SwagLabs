@@ -41,6 +41,7 @@ public class VerifyTheSwagLabsApplication extends Pojo {
 			driver = openFirefoxBrowser();
 		}
 		
+		
 		 driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
 	}
 	
