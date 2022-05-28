@@ -2,6 +2,7 @@ package browserSetting;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Pojo {
@@ -16,5 +17,11 @@ public class Pojo {
 	    WebDriver driver = new FirefoxDriver();
 	    return driver;
 	}
+	
+	public static WebDriver openEdgeBrowser() {
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\akank\\OneDrive\\Desktop\\msedgedriver.exe");
+	    WebDriver driver = new EdgeDriver();
+	    return driver;
 
+}
 }
